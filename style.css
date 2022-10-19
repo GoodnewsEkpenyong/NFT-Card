@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+    /* width: 1440px; */
+    font-family: [Outfit](https://fonts.google.com/specimen/Outfit);
+}
+
+.container {
+    background: hsl(215, 32%, 27%);
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px 10px hsl(215, 38%, 9%);
+}
+
+.card-contents {
+    padding: 20px 20px 20px 20px;
+}
+
+.head-image img {
+    width: 335px;
+    height: 335px;
+    border-radius: 10px;
+
+}
+
+.head-image img:hover{
+    cursor: pointer;
+    background: url('<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>') no-repeat;
+}
+
+.view-image {
+    background: hsl(178, 100%, 50%);
+    width: 335px;
+    height: 335px;
+    border-radius: 10px;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.view-image svg{
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+
+.view-image:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.7s ease;
+}
+
+.tag {
+    color: hsl(0, 0%, 100%);
+    padding-top: 10px;
+}
+
+.tag:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.calm {
+    color:hsl(215, 51%, 70%);
+    font-size: 19px;
+    padding-top: 20px;
+}
+
+.price-and-days {
+    padding-top: 20px;
+    column-count: 2;
+}
+
+.eth-price {
+    column-count: 2;
+}
+
+.eth-price .price{
+    margin-left: -100%;
+}
+
+.days-left-group .days-left-icon {
+    margin-left: 95%;
+}
+
+.eth-price .price p{
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+
+.days-left-group {
+    column-count: 2;
+}
+
+.days-left p {
+    color: hsl(215, 51%, 70%);
+}
+
+.footer {
+    column-count: 2;
+}
+
+.footer .footer-image img {
+    width: 40px;
+    border: white 1px solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+.footer .footer-text {
+    color: white;
+    margin-left: -75%;
+    padding-top: 10px;
+}
+
+.footer .footer-text strong:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
